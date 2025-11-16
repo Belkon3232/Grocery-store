@@ -14,7 +14,7 @@ For shelf life; =Grocery_Inventory_new_v1[recent date received]-Grocery_Inventor
 Finally, the formula;
 =IF(Grocery_Inventory_new_v1[recent date received]=Grocery_Inventory_new_v1[Date_Received],Grocery_Inventory_new_v1[Shelf time],0) gave the required answer.
 
-For question five, the neccessary fields we subjected to data forecasting, this displayed appropriate trends which was vital in predicting seasonal demands for te various product categories.
+For question five, the neccessary fields we subjected to data forecasting, this displayed appropriate trends which was vital in predicting seasonal demands for the various product categories.
 
 Questions
 1. What is the average stock quantity available per product category? The average stock quantity available per product category are;
