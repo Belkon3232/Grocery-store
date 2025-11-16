@@ -4,7 +4,11 @@ This analysis was conducted entirely with microsoft excel. Within microsoft exce
 # Data cleaning
 This was conducted using power query; here improper texts were transformed aptly, every field carried their various and correct data type.
 # Analysis
-Proper analysis of the data set aided correct answers to the various questions asked; The fisrst question was on the average stock quantity/product category: This was found by creating a new measure formula =AVERAGE(Grocery_Inventory_new_v1[Stock_Quantity])
+Proper analysis of the data set aided correct answers to the various questions asked; The first question was on the average stock quantity/product category: This was found by creating a new measure formula =AVERAGE(Grocery_Inventory_new_v1[Stock_Quantity]).
+For the third question which is on finding the product with the longest shelf life,multiple calculated columns where added to help us achieve the required object. firstly, a calculated column(Recent date) was included to reveal the latest dates for each product, formula used: =CALCULATE(MAX(Grocery_Inventory_new_v1[Date_Received]),
+FILTER(Grocery_Inventory_new_v1, Grocery_Inventory_new_v1[Product_Name] = EARLIEST(Grocery_Inventory_new_v1[Product_Name]))). For shelf life; =Grocery_Inventory_new_v1[recent date received]-Grocery_Inventory_new_v1[Expiration_Date] was used. Finally, the formula;
+=IF(Grocery_Inventory_new_v1[recent date received]=Grocery_Inventory_new_v1[Date_Received],Grocery_Inventory_new_v1[Shelf time],0) gave the required answer.
+For question five, the neccessary fields we subjected to data forecasting, this displayed appropriate trends which was vital in predicting seasonal demands for te various product categories.
 
 Questions
 1. What is the average stock quantity available per product category? The average stock quantity available per product category are;
