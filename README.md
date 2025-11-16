@@ -1,5 +1,11 @@
-# Grocery-store
-Grocery Inventory
+# Grocery-store inventory
+# Tools used
+This analysis was conducted entirely with microsoft excel. Within microsoft excel, power query was applied for cleaning data and power pivot was used for used for analysing and modelling. 
+# Data cleaning
+This was conducted using power query; here improper texts were transformed aptly, every field carried their various and correct data type.
+# Analysis
+Proper analysis of the data set aided correct answers to the various questions asked; The fisrst question was on the average stock quantity/product category: This was found by creating a new measure formula =AVERAGE(Grocery_Inventory_new_v1[Stock_Quantity])
+
 Questions
 1. What is the average stock quantity available per product category? The average stock quantity available per product category are;
    Bakery(56), Beverages(50), Diary(58), Fruits & vegetables(55), Grains & pulse(50), Oils & fats(53), Seafood(62). 
